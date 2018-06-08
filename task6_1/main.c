@@ -50,7 +50,7 @@ int main(int argc, char* argv[])
 
 		close(fd2);
 	}
-	else if(S_ISDIR(sb.st_mode))
+	else if(S_ISREG(sb.st_mode))
 	{
 		int fd3;
 		fd3 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC);
