@@ -22,7 +22,7 @@ int main(int argc, char* argv[])
 
 	int fd1;
 	int j =2;
-	for(int i=1; i<argc; i++)
+	for(int i=1; i<argc-1; i++)
 	{
 		fd1 = open(argv[i], O_RDONLY);
 		if(fd1 == -1)
